@@ -1,1 +1,269 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artworks — Kit Edukasi STEM & Kreativitas Anak</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- Navbar -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="#" class="logo">
+        <img src="Gambar/LOGO-ARTWORKS.jpeg" alt="Logo Artworks">
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Utama">
+        <ul>
+          <li><a href="#produk" class="nav-link">Produk</a></li>
+          <li><a href="#fitur" class="nav-link">Keunggulan</a></li>
+          <li><a href="#cara" class="nav-link">Cara Kerja</a></li>
+          <li><a href="#harga" class="nav-link">Paket Harga</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline" onclick="bukaModal('Konsultasi / Login')">Masuk</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 01 Hero Section -->
+  <section class="hero-sec" id="produk">
+    <div class="container hero-grid">
+      <div class="hero-text reveal">
+        <span class="badge">✨ Inovasi Belajar STEM Modern</span>
+        <h1>Rakit, Eksperimen, dan Ciptakan Karyamu Sendiri</h1>
+        <p>Hadirkan pengalaman belajar <strong>Science, Technology, Engineering, & Maths</strong> yang seru bagi anak melalui kit kendaraan rakitan edukatif berkualitas dari Artworks.</p>
+        <div class="actions">
+          <a href="#harga" class="btn btn-primary">Pilih Paket Kit</a>
+          <a href="#fitur" class="btn btn-outline">Lihat Keunggulan</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>100%</strong><span>Aman & Edukatif</span></div>
+          <div><strong>30+</strong><span>Eksperimen Seru</span></div>
+          <div><strong>8+ Thn</strong><span>Rekomendasi Usia</span></div>
+        </div>
+      </div>
+
+      <!-- Galeri Produk Interaktif -->
+      <div class="hero-gallery reveal">
+        <div class="main-img-box">
+          <img id="mainProductImg" src="Gambar/produk-artworks-1.jpeg" alt="Kit Mobil Tenaga Surya Artworks">
+        </div>
+        <div class="thumb-list">
+          <button class="thumb-btn active" onclick="gantiGambar('Gambar/produk-artworks-1.jpeg', this)">
+            <img src="Gambar/produk-artworks-1.jpeg" alt="Varian Solar Car">
+            <span>Solar Car Kit</span>
+          </button>
+          <button class="thumb-btn" onclick="gantiGambar('Gambar/produk-artworks-2.jpeg', this)">
+            <img src="Gambar/produk-artworks-2.jpeg" alt="Varian Remote Control Kayu">
+            <span>RC Wood Kit</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 Bukti Sosial -->
+  <section class="social-proof">
+    <div class="container logos">
+      <p>Dipercaya oleh komunitas & pendidik:</p>
+      <div class="brand-tag">Komunitas STEM ID</div>
+      <div class="brand-tag">Klub Robotik Sekolah</div>
+      <div class="brand-tag">EduKids Nusantara</div>
+      <div class="brand-tag">Homeschooling Kreatif</div>
+    </div>
+  </section>
+
+  <!-- 03 Keunggulan / Manfaat -->
+  <section class="sec" id="fitur">
+    <div class="container">
+      <div class="sec-head reveal">
+        <h2>Kenapa Memilih Kit Artworks?</h2>
+        <p>Dirancang khusus untuk mengurangi waktu layar (screen time) dan menggantinya dengan aktivitas merakit yang melatih logika.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="icon-box">⚡</div>
+          <h3>Energi & Mekanika Nyata</h3>
+          <p>Anak belajar langsung cara kerja panel surya, roda gigi (gear), dinamo motor, hingga rangkaian kendali jarak jauh (remote control).</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon-box">🛠️</div>
+          <h3>Melatih Motorik & Fokus</h3>
+          <p>Setiap komponen dirancang presisi agar mudah dirakit secara mandiri maupun bersama orang tua dengan panduan langkah demi langkah.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon-box">🌿</div>
+          <h3>Material Ramah Anak</h3>
+          <p>Menggunakan komponen pilihan seperti kayu potong presisi dan plastik ABS kokoh yang aman untuk eksplorasi jangka panjang.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 Cara Kerja -->
+  <section class="sec alt" id="cara">
+    <div class="container">
+      <div class="sec-head reveal">
+        <h2>Mulai dalam 3 Langkah Mudah</h2>
+      </div>
+      <div class="grid-3">
+        <div class="step-card reveal">
+          <div class="step-num">1</div>
+          <h3>Pilih Kit Favorit</h3>
+          <p>Tentukan jenis rakitan yang paling disukai anak, mulai dari mobil tenaga surya hingga mobil kendali kayu.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">2</div>
+          <h3>Rakit Komponennya</h3>
+          <p>Ikuti buku panduan visual untuk menyambungkan kabel, motor, roda, dan rangka tanpa perlu menyolder.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">3</div>
+          <h3>Uji Coba & Mainkan</h3>
+          <p>Lihat bagaimana mobil melaju di bawah sinar matahari atau dikendalikan dengan remote buatan tangan sendiri.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 Testimoni -->
+  <section class="sec">
+    <div class="container testi reveal">
+      <div class="quote-icon">“</div>
+      <blockquote>Anak saya langsung lupa main HP begitu paket dari Artworks datang. Dia bangga sekali waktu mobil kayu remote control-nya berhasil jalan!</blockquote>
+      <p class="author"><strong>Ibu Rina Wati</strong> — Orang Tua & Praktisi Edukasi Anak</p>
+    </div>
+  </section>
+
+  <!-- 06 Paket Harga -->
+  <section class="sec alt" id="harga">
+    <div class="container">
+      <div class="sec-head reveal">
+        <h2>Pilih Paket Kit Artworks</h2>
+        <p>Harga terjangkau dengan kelengkapan komponen siap rakit di setiap kotak.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card price-card reveal">
+          <h3>Paket Pemula</h3>
+          <p class="price">Rp 75.000</p>
+          <p class="desc">Ideal untuk percobaan pertama mengenal mekanika roda gigi dan dinamo.</p>
+          <ul class="feat-list">
+            <li>✓ 1x Kit Mobil Tenaga Surya</li>
+            <li>✓ Panduan Rakit Bergambar</li>
+            <li>✓ Lembar Fakta Sains Dasar</li>
+          </ul>
+          <button class="btn btn-outline full" onclick="bukaModal('Paket Pemula (Rp 75.000)')">Pesan Paket Ini</button>
+        </div>
+
+        <div class="card price-card popular reveal">
+          <span class="pop-tag">Paling Laris</span>
+          <h3>Paket Kreatif</h3>
+          <p class="price">Rp 135.000</p>
+          <p class="desc">Eksperimen lebih seru dengan sistem kendali jarak jauh dan rangka kayu presisi.</p>
+          <ul class="feat-list">
+            <li>✓ 1x Kit Mobil RC Kayu</li>
+            <li>✓ Modul Remote Control + Antena</li>
+            <li>✓ Panduan & Tantangan Sirkuit</li>
+          </ul>
+          <button class="btn btn-primary full" onclick="bukaModal('Paket Kreatif (Rp 135.000)')">Pesan Paket Ini</button>
+        </div>
+
+        <div class="card price-card reveal">
+          <h3>Paket Bundling STEM</h3>
+          <p class="price">Rp 195.000</p>
+          <p class="desc">Dapatkan kedua varian sekaligus untuk hadiah ulang tahun atau proyek sekolah.</p>
+          <ul class="feat-list">
+            <li>✓ Solar Car Kit + RC Wood Kit</li>
+            <li>✓ Bonus Obeng Mini & Baterai</li>
+            <li>✓ Sertifikat Kreator Cilik</li>
+          </ul>
+          <button class="btn btn-outline full" onclick="bukaModal('Paket Bundling STEM (Rp 195.000)')">Pesan Paket Ini</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 FAQ -->
+  <section class="sec" id="faq">
+    <div class="container faq-wrap">
+      <div class="sec-head reveal">
+        <h2>Pertanyaan Umum (FAQ)</h2>
+      </div>
+      <div class="faq-list reveal">
+        <details class="faq-item" open>
+          <summary>Apakah perlu alat khusus seperti solder untuk merakitnya?</summary>
+          <p>Tidak perlu. Semua sambungan kabel dan komponen dirancang menggunakan sistem mur-baut dan konektor jepit yang aman untuk anak-anak.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Untuk anak usia berapa kit ini direkomendasikan?</summary>
+          <p>Sangat cocok untuk anak usia 8 hingga 15 tahun. Anak usia 6–7 tahun juga bisa ikut merakit dengan pendampingan orang tua.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Apakah tersedia harga khusus untuk pembelian sekolah atau ekstrakurikuler?</summary>
+          <p>Tentu! Kami menyediakan paket grosir untuk sekolah, kursus robotik, maupun acara workshop anak. Klik tombol pesan untuk terhubung dengan admin kami.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 CTA Akhir -->
+  <section class="cta-sec">
+    <div class="container reveal">
+      <h2>Siap Menumbuhkan Jiwa Inovator Anak?</h2>
+      <p>Pesan kit edukasi Artworks sekarang dan mulai petualangan sains langsung dari rumah.</p>
+      <button class="btn btn-accent" onclick="bukaModal('Pemesanan Kit Artworks')">Pesan Sekarang</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong class="footer-brand">ARTWORKS</strong>
+        <p>Karya kreatif dan kit edukasi STEM untuk generasi masa depan Indonesia.</p>
+      </div>
+      <div>
+        <strong>Navigasi</strong>
+        <a href="#produk">Produk</a>
+        <a href="#fitur">Keunggulan</a>
+        <a href="#harga">Harga</a>
+      </div>
+      <div>
+        <strong>Bantuan</strong>
+        <a href="#faq">FAQ</a>
+        <a href="javascript:void(0)" onclick="bukaModal('Hubungi Kami')">Hubungi Kami</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Pemesanan Interaktif (JavaScript) -->
+  <div class="modal-backdrop" id="orderModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="tutupModal()">✕</button>
+      <h3>Formulir Pemesanan</h3>
+      <p id="modalPaketInfo" class="modal-sub">Paket dipilih: -</p>
+      <form id="orderForm" onsubmit="kirimPesanan(event)">
+        <label>Nama Pemesan</label>
+        <input type="text" id="namaPemesan" placeholder="Contoh: Budi Santoso" required>
+        
+        <label>Jumlah Paket</label>
+        <input type="number" id="jumlahPaket" value="1" min="1" required>
+        
+        <label>Catatan / Alamat Singkat</label>
+        <textarea id="catatanPesanan" rows="2" placeholder="Tulis alamat pengiriman atau pertanyaan..."></textarea>
+        
+        <button type="submit" class="btn btn-primary full" style="margin-top:12px;">Kirim Pesanan via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
